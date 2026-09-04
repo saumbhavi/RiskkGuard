@@ -1,0 +1,645 @@
+{
+  "trained_at": "2026-09-03T15:12:53.999824+00:00",
+  "dataset": {
+    "source": "synthetic (see app/ml/data_gen.py) \u2014 replace with real order history before production use",
+    "n_total": 40000,
+    "n_train": 32000,
+    "n_test": 8000,
+    "base_return_rate": 0.2076,
+    "split_method": "time_based_80_20",
+    "train_date_range": [
+      "2025-01-01",
+      "2026-03-13"
+    ],
+    "test_date_range": [
+      "2026-03-13",
+      "2026-07-01"
+    ]
+  },
+  "headline": {
+    "roc_auc": 0.7227,
+    "average_precision": 0.4657,
+    "operating_threshold": 0.15,
+    "precision_at_threshold": 0.3024,
+    "recall_at_threshold": 0.7714,
+    "f1_at_threshold": 0.4345,
+    "confusion_matrix": {
+      "tp": 1296,
+      "fp": 2990,
+      "fn": 384,
+      "tn": 3330
+    },
+    "estimated_net_value_inr_on_test_set": 202410.0,
+    "n_test_orders": 8000
+  },
+  "cost_assumptions": {
+    "avg_return_cost_saved_per_tp": 260.0,
+    "avg_friction_cost_per_fp": 45.0
+  },
+  "cost_curve": [
+    {
+      "threshold": 0.05,
+      "tp": 1674,
+      "fp": 6136,
+      "fn": 6,
+      "tn": 184,
+      "precision": 0.2143,
+      "recall": 0.9964,
+      "net_value_inr": 159120.0
+    },
+    {
+      "threshold": 0.1,
+      "tp": 1535,
+      "fp": 4502,
+      "fn": 145,
+      "tn": 1818,
+      "precision": 0.2543,
+      "recall": 0.9137,
+      "net_value_inr": 196510.0
+    },
+    {
+      "threshold": 0.15,
+      "tp": 1296,
+      "fp": 2990,
+      "fn": 384,
+      "tn": 3330,
+      "precision": 0.3024,
+      "recall": 0.7714,
+      "net_value_inr": 202410.0
+    },
+    {
+      "threshold": 0.2,
+      "tp": 1051,
+      "fp": 1969,
+      "fn": 629,
+      "tn": 4351,
+      "precision": 0.348,
+      "recall": 0.6256,
+      "net_value_inr": 184655.0
+    },
+    {
+      "threshold": 0.25,
+      "tp": 845,
+      "fp": 1284,
+      "fn": 835,
+      "tn": 5036,
+      "precision": 0.3969,
+      "recall": 0.503,
+      "net_value_inr": 161920.0
+    },
+    {
+      "threshold": 0.3,
+      "tp": 677,
+      "fp": 805,
+      "fn": 1003,
+      "tn": 5515,
+      "precision": 0.4568,
+      "recall": 0.403,
+      "net_value_inr": 139795.0
+    },
+    {
+      "threshold": 0.35,
+      "tp": 531,
+      "fp": 513,
+      "fn": 1149,
+      "tn": 5807,
+      "precision": 0.5086,
+      "recall": 0.3161,
+      "net_value_inr": 114975.0
+    },
+    {
+      "threshold": 0.4,
+      "tp": 428,
+      "fp": 325,
+      "fn": 1252,
+      "tn": 5995,
+      "precision": 0.5684,
+      "recall": 0.2548,
+      "net_value_inr": 96655.0
+    },
+    {
+      "threshold": 0.45,
+      "tp": 339,
+      "fp": 193,
+      "fn": 1341,
+      "tn": 6127,
+      "precision": 0.6372,
+      "recall": 0.2018,
+      "net_value_inr": 79455.0
+    },
+    {
+      "threshold": 0.5,
+      "tp": 276,
+      "fp": 124,
+      "fn": 1404,
+      "tn": 6196,
+      "precision": 0.69,
+      "recall": 0.1643,
+      "net_value_inr": 66180.0
+    },
+    {
+      "threshold": 0.55,
+      "tp": 231,
+      "fp": 83,
+      "fn": 1449,
+      "tn": 6237,
+      "precision": 0.7357,
+      "recall": 0.1375,
+      "net_value_inr": 56325.0
+    },
+    {
+      "threshold": 0.6,
+      "tp": 197,
+      "fp": 59,
+      "fn": 1483,
+      "tn": 6261,
+      "precision": 0.7695,
+      "recall": 0.1173,
+      "net_value_inr": 48565.0
+    },
+    {
+      "threshold": 0.65,
+      "tp": 156,
+      "fp": 42,
+      "fn": 1524,
+      "tn": 6278,
+      "precision": 0.7879,
+      "recall": 0.0929,
+      "net_value_inr": 38670.0
+    },
+    {
+      "threshold": 0.7,
+      "tp": 134,
+      "fp": 33,
+      "fn": 1546,
+      "tn": 6287,
+      "precision": 0.8024,
+      "recall": 0.0798,
+      "net_value_inr": 33355.0
+    },
+    {
+      "threshold": 0.75,
+      "tp": 114,
+      "fp": 19,
+      "fn": 1566,
+      "tn": 6301,
+      "precision": 0.8571,
+      "recall": 0.0679,
+      "net_value_inr": 28785.0
+    },
+    {
+      "threshold": 0.8,
+      "tp": 101,
+      "fp": 13,
+      "fn": 1579,
+      "tn": 6307,
+      "precision": 0.886,
+      "recall": 0.0601,
+      "net_value_inr": 25675.0
+    },
+    {
+      "threshold": 0.85,
+      "tp": 85,
+      "fp": 7,
+      "fn": 1595,
+      "tn": 6313,
+      "precision": 0.9239,
+      "recall": 0.0506,
+      "net_value_inr": 21785.0
+    },
+    {
+      "threshold": 0.9,
+      "tp": 60,
+      "fp": 1,
+      "fn": 1620,
+      "tn": 6319,
+      "precision": 0.9836,
+      "recall": 0.0357,
+      "net_value_inr": 15555.0
+    },
+    {
+      "threshold": 0.95,
+      "tp": 15,
+      "fp": 0,
+      "fn": 1665,
+      "tn": 6320,
+      "precision": 1.0,
+      "recall": 0.0089,
+      "net_value_inr": 3900.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "threshold": 0.03,
+      "precision": 0.21,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.047,
+      "precision": 0.2128,
+      "recall": 0.9964
+    },
+    {
+      "threshold": 0.053,
+      "precision": 0.2157,
+      "recall": 0.9929
+    },
+    {
+      "threshold": 0.058,
+      "precision": 0.2187,
+      "recall": 0.9893
+    },
+    {
+      "threshold": 0.063,
+      "precision": 0.2205,
+      "recall": 0.9804
+    },
+    {
+      "threshold": 0.067,
+      "precision": 0.2239,
+      "recall": 0.9774
+    },
+    {
+      "threshold": 0.07,
+      "precision": 0.2263,
+      "recall": 0.9702
+    },
+    {
+      "threshold": 0.074,
+      "precision": 0.2297,
+      "recall": 0.9667
+    },
+    {
+      "threshold": 0.077,
+      "precision": 0.2328,
+      "recall": 0.9613
+    },
+    {
+      "threshold": 0.081,
+      "precision": 0.2349,
+      "recall": 0.9512
+    },
+    {
+      "threshold": 0.084,
+      "precision": 0.2387,
+      "recall": 0.9476
+    },
+    {
+      "threshold": 0.088,
+      "precision": 0.2417,
+      "recall": 0.9405
+    },
+    {
+      "threshold": 0.091,
+      "precision": 0.2448,
+      "recall": 0.9333
+    },
+    {
+      "threshold": 0.094,
+      "precision": 0.2478,
+      "recall": 0.925
+    },
+    {
+      "threshold": 0.097,
+      "precision": 0.2515,
+      "recall": 0.919
+    },
+    {
+      "threshold": 0.101,
+      "precision": 0.2556,
+      "recall": 0.9137
+    },
+    {
+      "threshold": 0.104,
+      "precision": 0.2594,
+      "recall": 0.9065
+    },
+    {
+      "threshold": 0.108,
+      "precision": 0.2622,
+      "recall": 0.8958
+    },
+    {
+      "threshold": 0.111,
+      "precision": 0.2654,
+      "recall": 0.8857
+    },
+    {
+      "threshold": 0.115,
+      "precision": 0.2677,
+      "recall": 0.872
+    },
+    {
+      "threshold": 0.119,
+      "precision": 0.2706,
+      "recall": 0.8601
+    },
+    {
+      "threshold": 0.122,
+      "precision": 0.2741,
+      "recall": 0.8494
+    },
+    {
+      "threshold": 0.126,
+      "precision": 0.2775,
+      "recall": 0.8381
+    },
+    {
+      "threshold": 0.129,
+      "precision": 0.2813,
+      "recall": 0.8274
+    },
+    {
+      "threshold": 0.133,
+      "precision": 0.286,
+      "recall": 0.8185
+    },
+    {
+      "threshold": 0.137,
+      "precision": 0.2898,
+      "recall": 0.8065
+    },
+    {
+      "threshold": 0.142,
+      "precision": 0.295,
+      "recall": 0.7976
+    },
+    {
+      "threshold": 0.146,
+      "precision": 0.2992,
+      "recall": 0.7851
+    },
+    {
+      "threshold": 0.151,
+      "precision": 0.3022,
+      "recall": 0.769
+    },
+    {
+      "threshold": 0.155,
+      "precision": 0.3068,
+      "recall": 0.7565
+    },
+    {
+      "threshold": 0.159,
+      "precision": 0.3115,
+      "recall": 0.7435
+    },
+    {
+      "threshold": 0.164,
+      "precision": 0.3149,
+      "recall": 0.7268
+    },
+    {
+      "threshold": 0.169,
+      "precision": 0.3194,
+      "recall": 0.7119
+    },
+    {
+      "threshold": 0.174,
+      "precision": 0.3243,
+      "recall": 0.697
+    },
+    {
+      "threshold": 0.18,
+      "precision": 0.3298,
+      "recall": 0.6827
+    },
+    {
+      "threshold": 0.184,
+      "precision": 0.3339,
+      "recall": 0.6649
+    },
+    {
+      "threshold": 0.191,
+      "precision": 0.3403,
+      "recall": 0.6506
+    },
+    {
+      "threshold": 0.198,
+      "precision": 0.3439,
+      "recall": 0.6304
+    },
+    {
+      "threshold": 0.204,
+      "precision": 0.3517,
+      "recall": 0.6167
+    },
+    {
+      "threshold": 0.211,
+      "precision": 0.3573,
+      "recall": 0.5982
+    },
+    {
+      "threshold": 0.218,
+      "precision": 0.3653,
+      "recall": 0.5827
+    },
+    {
+      "threshold": 0.225,
+      "precision": 0.3691,
+      "recall": 0.5595
+    },
+    {
+      "threshold": 0.232,
+      "precision": 0.3761,
+      "recall": 0.5405
+    },
+    {
+      "threshold": 0.24,
+      "precision": 0.3871,
+      "recall": 0.5256
+    },
+    {
+      "threshold": 0.249,
+      "precision": 0.3966,
+      "recall": 0.5071
+    },
+    {
+      "threshold": 0.258,
+      "precision": 0.406,
+      "recall": 0.4869
+    },
+    {
+      "threshold": 0.267,
+      "precision": 0.415,
+      "recall": 0.4649
+    },
+    {
+      "threshold": 0.276,
+      "precision": 0.4294,
+      "recall": 0.447
+    },
+    {
+      "threshold": 0.286,
+      "precision": 0.4406,
+      "recall": 0.4238
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.4572,
+      "recall": 0.4036
+    },
+    {
+      "threshold": 0.315,
+      "precision": 0.4681,
+      "recall": 0.3762
+    },
+    {
+      "threshold": 0.331,
+      "precision": 0.4832,
+      "recall": 0.35
+    },
+    {
+      "threshold": 0.345,
+      "precision": 0.5009,
+      "recall": 0.3232
+    },
+    {
+      "threshold": 0.365,
+      "precision": 0.5258,
+      "recall": 0.2976
+    },
+    {
+      "threshold": 0.388,
+      "precision": 0.5575,
+      "recall": 0.2714
+    },
+    {
+      "threshold": 0.411,
+      "precision": 0.5839,
+      "recall": 0.2381
+    },
+    {
+      "threshold": 0.445,
+      "precision": 0.6304,
+      "recall": 0.2071
+    },
+    {
+      "threshold": 0.491,
+      "precision": 0.6826,
+      "recall": 0.1702
+    },
+    {
+      "threshold": 0.573,
+      "precision": 0.7517,
+      "recall": 0.128
+    },
+    {
+      "threshold": 0.716,
+      "precision": 0.8301,
+      "recall": 0.0756
+    },
+    {
+      "threshold": 0.945,
+      "precision": 1.0,
+      "recall": 0.0119
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "price_deviation_pct",
+      "importance": 0.14586,
+      "importance_pct": 54.59
+    },
+    {
+      "feature": "pay_cod",
+      "importance": 0.04964,
+      "importance_pct": 18.58
+    },
+    {
+      "feature": "discount_pct",
+      "importance": 0.02267,
+      "importance_pct": 8.48
+    },
+    {
+      "feature": "customer_return_rate",
+      "importance": 0.02029,
+      "importance_pct": 7.59
+    },
+    {
+      "feature": "delivery_delay_days",
+      "importance": 0.01137,
+      "importance_pct": 4.26
+    },
+    {
+      "feature": "customer_tenure_days",
+      "importance": 0.00766,
+      "importance_pct": 2.87
+    },
+    {
+      "feature": "seller_rating",
+      "importance": 0.00296,
+      "importance_pct": 1.11
+    },
+    {
+      "feature": "cat_fashion",
+      "importance": 0.00284,
+      "importance_pct": 1.06
+    },
+    {
+      "feature": "order_value",
+      "importance": 0.00211,
+      "importance_pct": 0.79
+    },
+    {
+      "feature": "pay_prepaid_card",
+      "importance": 0.00096,
+      "importance_pct": 0.36
+    },
+    {
+      "feature": "cat_beauty",
+      "importance": 0.00024,
+      "importance_pct": 0.09
+    },
+    {
+      "feature": "hour_of_day",
+      "importance": 0.00015,
+      "importance_pct": 0.06
+    },
+    {
+      "feature": "distance_km",
+      "importance": 0.00014,
+      "importance_pct": 0.05
+    },
+    {
+      "feature": "cat_home",
+      "importance": 0.0001,
+      "importance_pct": 0.04
+    },
+    {
+      "feature": "pay_upi",
+      "importance": 0.0001,
+      "importance_pct": 0.04
+    },
+    {
+      "feature": "cat_other",
+      "importance": 8e-05,
+      "importance_pct": 0.03
+    },
+    {
+      "feature": "cat_electronics",
+      "importance": 1e-05,
+      "importance_pct": 0.0
+    },
+    {
+      "feature": "customer_past_orders",
+      "importance": 0.0,
+      "importance_pct": 0.0
+    },
+    {
+      "feature": "is_weekend_purchase",
+      "importance": 0.0,
+      "importance_pct": 0.0
+    },
+    {
+      "feature": "cat_grocery",
+      "importance": 0.0,
+      "importance_pct": 0.0
+    },
+    {
+      "feature": "pay_wallet",
+      "importance": 0.0,
+      "importance_pct": 0.0
+    }
+  ]
+}

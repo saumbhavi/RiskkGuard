@@ -1,0 +1,23 @@
+[
+  "order_value",
+  "discount_pct",
+  "customer_tenure_days",
+  "customer_past_orders",
+  "customer_return_rate",
+  "seller_rating",
+  "delivery_delay_days",
+  "price_deviation_pct",
+  "is_weekend_purchase",
+  "hour_of_day",
+  "distance_km",
+  "cat_fashion",
+  "cat_electronics",
+  "cat_home",
+  "cat_beauty",
+  "cat_grocery",
+  "cat_other",
+  "pay_cod",
+  "pay_prepaid_card",
+  "pay_upi",
+  "pay_wallet"
+]
