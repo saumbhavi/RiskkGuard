@@ -10,7 +10,7 @@ scores and explains; it never blocks, cancels, or auto-actions an order. Every
 flag is a recommendation a human (or the merchant's existing OMS rules) acts
 on.
 
-## Why this shape
+## Why this shape-
 
 A merchant doesn't care about F1 score — they care about rupees saved vs.
 rupees lost to friction. The whole system is built around that:
